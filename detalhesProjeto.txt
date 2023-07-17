@@ -1,2 +1,7 @@
 -- Paleta de Cores
 -- Icones
+
+
+PULL
+
+PUSH

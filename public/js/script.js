@@ -1,4 +1,5 @@
 const setToLocalStorage = (attr, value) => localStorage.setItem(attr, value)
+
 const getToLocalStorage = attr => localStorage.getItem(attr)
 
 const alterClass = (passClass, actualClass) => {

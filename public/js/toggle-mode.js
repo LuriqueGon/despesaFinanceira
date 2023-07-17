@@ -21,6 +21,7 @@ const loadLightTheme = (theme = 'light', passTheme= 'dark') => loadTheme(theme, 
 const loadTheme = (theme, passTheme) => {
 
     setToLocalStorage('theme', theme)
+    
     alterClass('bg-'+ passTheme, 'bg-'+theme)
     alterClass('text-'+ passTheme, 'text-'+theme)
     alterClass('navbar-'+ passTheme, 'navbar-'+theme)
