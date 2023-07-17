@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- METATAG -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Despesas Financeiras">
+    <meta name="author" content="name: Luiz Henrique; Email: Luiz.prog.henri@gmail.com">
+    <meta name="author" content="name: ; Email: ">
+    <meta name="author" content="name: ; Email: ">
+    <meta name="author" content="name: ; Email: ">
+
+    <!-- FAVICO -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/css/var.css"> <!--Variáveis do CSS-->
+    <link rel="stylesheet" href="../public/css/default.css"> <!-- Todas as Páginas-->
+    <link rel="stylesheet" href="../public/css/header.css"> <!-- Página Específica-->
+    <link rel="stylesheet" href="../public/css/home.css"> <!-- Página Específica-->
+
+    <!-- Bootstrap 5.0.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--FontAwesome 6.4.0-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- ICON -->
+
+    <link rel="shortcut icon" href="../public/ico/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/ico/favicon-16x16.png">
+    <link rel="manifest" href="../public/ico/site.webmanifest">
+
+    <!-- JS -->
+    <script src="../public/js/script.js" defer></script>
+
+    <!-- JQUERY 3.7.0-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Bootstrap BUNDLE 5.0.2-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Popper 5.0.2-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS 5.0.2-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Google Charts (Gráficos)-->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <title>Despesas Financeiras | Inicio |</title>
+
+</head>
+
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="row w-100">
+                        <!-- ESQUERDA -->
+                        <div class="col">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <!-- LOGO -->
+                                <li class="nav-item">
+                                    <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                                        <img src="../public/img/logo.png" height="25" width="25">
+                                    </a>
+                                </li>
+                                <!-- Menus -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- DIREITA -->
+                        <div class="col-md-2">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item mt-2 pt-1">
+                                    <label class="switch">
+                                        <input type="checkbox" id="mode-toggle" onchange="changeMode()">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
+
+<script>
+    const changeMode = e => {
+        if((document.querySelector('#mode-toggle').checked)) console.log('Dark Mode')
+        else console.log('Light Mode')
+    }
+</script>
+
+<!-- REFERENCIA: https://getbootstrap.com/docs/5.1/components/navbar/ -->

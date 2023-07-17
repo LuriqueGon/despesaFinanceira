@@ -1,0 +1,29 @@
+.input-number::-webkit-inner-spin-button {-webkit-appearance: none}
+.input-number{-moz-appearance: textfield;appearance: textfield}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+html{font-size: 16px!important;}
+body > * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: black;
+    background: transparent;
+}
+
+ul{list-style: none}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.w-100{width: 100%;}
